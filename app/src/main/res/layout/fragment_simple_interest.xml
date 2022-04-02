@@ -12,7 +12,20 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:gravity="center"
-        android:layout_margin="10dp">
+        android:layout_marginTop="50dp">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="20dp">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="Simple Interest"
+            android:textSize="34sp" /></LinearLayout>
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -20,7 +33,6 @@
             android:layout_margin="5dp">
 
             <TextView
-                android:id="@+id/lengthView"
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal|center_vertical"
@@ -28,7 +40,7 @@
                 android:textSize="24sp" />
 
             <EditText
-                android:id="@+id/amount"
+                android:id="@+id/principal"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:inputType="numberDecimal"
@@ -41,7 +53,6 @@
             android:layout_margin="5dp">
 
             <TextView
-                android:id="@+id/breadthView1"
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal|center_vertical"
@@ -63,7 +74,6 @@
             android:layout_margin="5dp">
 
             <TextView
-                android:id="@+id/breadthView"
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal|center_vertical"
@@ -78,45 +88,44 @@
                 app:layout_constraintStart_toEndOf="@+id/breadthView"
                 tools:ignore="SpeakableTextPresentCheck"/>
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_margin="5dp"/>
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="30dp">
+            android:layout_margin="5dp">
 
-            <Button
-                android:id="@+id/Calculate"
-                android:layout_width="170dp"
-                android:layout_height="52dp"
-                android:layout_marginStart="11dp"
-                android:layout_marginEnd="11dp"
-                android:text="Calculate"
-                android:textSize="16sp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/tsa"
-                app:layout_constraintStart_toEndOf="@+id/volume"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.459" />
-
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="Simple Interest"
+                android:textSize="24sp" />
+            <EditText
+                android:id="@+id/simpleInterest"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:minHeight="48dp"
+                app:layout_constraintStart_toEndOf="@+id/breadthView"
+                tools:ignore="SpeakableTextPresentCheck"/>
         </LinearLayout>
 
-        <TextView
-            android:id="@+id/result"
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="40dp"
-            android:layout_marginTop="30dp"
-            android:layout_marginEnd="40dp"
-            android:gravity="center|center_horizontal"
-            android:text="Result"
-            android:textSize="24sp"
-            android:textStyle="bold"
-             />
+            android:orientation="horizontal"
+            android:layout_margin="5dp">
+
+            <TextView
+                android:id="@+id/output"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="Result"
+                android:textSize="24sp" />
+        </LinearLayout>
+
     </LinearLayout>
 
 
