@@ -11,7 +11,21 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:gravity="center"
-        android:layout_margin="10dp">
+        android:layout_marginTop="50dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center|center_horizontal"
+                android:text="Profit/Loss"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+        </LinearLayout>
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -19,11 +33,10 @@
             android:layout_margin="5dp">
 
             <TextView
-                android:id="@+id/lengthView"
-                android:layout_width="wrap_content"
+                android:layout_width="150dp"
                 android:layout_height="wrap_content"
-                android:gravity="center_horizontal|center_vertical"
-                android:text="Selling Price: "
+                android:gravity="right"
+                android:text="Selling Price : "
                 android:textSize="24sp" />
 
             <EditText
@@ -40,11 +53,10 @@
             android:layout_margin="5dp">
 
             <TextView
-                android:id="@+id/breadthView"
-                android:layout_width="wrap_content"
+                android:layout_width="150dp"
                 android:layout_height="wrap_content"
-                android:gravity="center_horizontal|center_vertical"
-                android:text="Cost Price: "
+                android:gravity="right"
+                android:text="Cost Price : "
                 android:textSize="24sp" />
             <EditText
                 android:id="@+id/CP"
@@ -55,50 +67,66 @@
                 app:layout_constraintStart_toEndOf="@+id/breadthView"
                 tools:ignore="SpeakableTextPresentCheck"/>
         </LinearLayout>
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_margin="5dp"/>
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="30dp">
 
-            <Button
-                android:id="@+id/Calculate"
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="5dp">
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="Profit % : "
+                android:textSize="24sp" />
+            <EditText
+                android:id="@+id/Profit"
                 android:layout_width="170dp"
-                android:layout_height="52dp"
-                android:layout_marginStart="11dp"
-                android:layout_marginEnd="11dp"
-                android:text="Profit/Loss"
-                android:textSize="16sp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/tsa"
-                app:layout_constraintStart_toEndOf="@+id/volume"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.459" />
-
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:minHeight="48dp"
+                app:layout_constraintStart_toEndOf="@+id/breadthView"
+                tools:ignore="SpeakableTextPresentCheck"/>
         </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="5dp">
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="Loss %:"
+                android:textSize="24sp" />
+            <EditText
+                android:id="@+id/Loss"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:minHeight="48dp"
+                app:layout_constraintStart_toEndOf="@+id/breadthView"
+                tools:ignore="SpeakableTextPresentCheck"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="20dp">
 
         <TextView
             android:id="@+id/result"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="40dp"
-            android:layout_marginTop="30dp"
-            android:layout_marginEnd="40dp"
             android:gravity="center|center_horizontal"
             android:text="Result"
             android:textSize="24sp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.498"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.602" />
+            android:textStyle="bold" />
+        </LinearLayout>
     </LinearLayout>
 
 
