@@ -132,6 +132,9 @@
         <action
             android:id="@+id/action_converterMenuFragment_to_dataConverterFragment"
             app:destination="@id/dataConverterFragment" />
+        <action
+            android:id="@+id/action_converterMenuFragment_to_lengthConverterFragment"
+            app:destination="@id/lengthConverterFragment" />
     </fragment>
     <fragment
         android:id="@+id/cuboidFragment"
@@ -237,5 +240,10 @@
         android:id="@+id/economicsMenuFragment"
         android:name="com.example.everycalc.EconomicsMenuFragment"
         android:label="EconomicsMenuFragment" />
+    <fragment
+        android:id="@+id/lengthConverterFragment"
+        android:name="com.example.everycalc.LengthConverterFragment"
+        android:label="fragment_length_converter"
+        tools:layout="@layout/fragment_length_converter" />
 
 </navigation>
