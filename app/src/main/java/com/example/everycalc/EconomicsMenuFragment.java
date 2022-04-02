@@ -12,7 +12,7 @@ import android.view.ViewGroup;
 
 public class EconomicsMenuFragment extends Fragment {
 
-    CardView simpleInterest;
+    CardView simpleInterest,CompoundInterest;
 
 
 
@@ -23,6 +23,7 @@ public class EconomicsMenuFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_economics_menu, container, false);
 
         simpleInterest=view.findViewById(R.id.SimpleInterest);
+        CompoundInterest=view.findViewById(R.id.CompoundInterest);
         simpleInterest.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -32,6 +33,14 @@ public class EconomicsMenuFragment extends Fragment {
             }
         });
 
+        CompoundInterest.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Navigation.findNavController(view).navigate(R.id.action_economicsMenuFragment_to_compoundInterestFragment);
+
+
+            }
+        });
         return view;
     }
 }

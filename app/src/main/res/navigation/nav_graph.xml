@@ -240,10 +240,18 @@
         <action
             android:id="@+id/action_economicsMenuFragment_to_simpleInterestFragment"
             app:destination="@id/simpleInterestFragment" />
+        <action
+            android:id="@+id/action_economicsMenuFragment_to_compoundInterestFragment"
+            app:destination="@id/compoundInterestFragment" />
     </fragment>
     <fragment
         android:id="@+id/simpleInterestFragment"
         android:name="com.example.everycalc.SimpleInterestFragment"
         android:label="SimpleInterestFragment" />
+    <fragment
+        android:id="@+id/compoundInterestFragment"
+        android:name="com.example.everycalc.CompoundInterestFragment"
+        android:label="fragment_compound_interest"
+        tools:layout="@layout/fragment_compound_interest" />
 
 </navigation>
