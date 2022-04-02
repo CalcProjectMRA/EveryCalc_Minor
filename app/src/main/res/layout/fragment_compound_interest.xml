@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".SimpleInterestFragment">
+    tools:context=".CompoundInterestFragment">
 
 
     <LinearLayout
@@ -12,20 +12,26 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:gravity="center"
-        android:layout_marginTop="50dp">
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_margin="20dp">
-
-        <TextView
-
+        android:layout_margin="10dp">
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:gravity="center_horizontal|center_vertical"
-            android:text="Simple Interest"
-            android:textSize="34sp" /></LinearLayout>
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_margin="20dp">
+            <TextView
+                android:id="@+id/periodType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Compounding Frequency"
+                android:textSize="24sp"
+                android:textStyle="bold|italic"/>
+
+            <Spinner
+                android:id="@+id/choose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -33,6 +39,7 @@
             android:layout_margin="5dp">
 
             <TextView
+                android:id="@+id/lengthView"
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal|center_vertical"
@@ -40,8 +47,8 @@
                 android:textSize="24sp" />
 
             <EditText
-                android:id="@+id/principal"
-                android:layout_width="100dp"
+                android:id="@+id/amount"
+                android:layout_width="160dp"
                 android:layout_height="wrap_content"
                 android:inputType="numberDecimal"
                 tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
@@ -53,6 +60,7 @@
             android:layout_margin="5dp">
 
             <TextView
+                android:id="@+id/breadthView1"
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal|center_vertical"
@@ -60,7 +68,7 @@
                 android:textSize="24sp" />
             <EditText
                 android:id="@+id/rate"
-                android:layout_width="100dp"
+                android:layout_width="160dp"
                 android:layout_height="wrap_content"
                 android:inputType="numberDecimal"
                 android:minHeight="48dp"
@@ -74,6 +82,7 @@
             android:layout_margin="5dp">
 
             <TextView
+                android:id="@+id/breadthView"
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal|center_vertical"
@@ -81,7 +90,7 @@
                 android:textSize="24sp" />
             <EditText
                 android:id="@+id/time"
-                android:layout_width="100dp"
+                android:layout_width="160dp"
                 android:layout_height="wrap_content"
                 android:inputType="numberDecimal"
                 android:minHeight="48dp"
@@ -96,14 +105,15 @@
             android:layout_margin="5dp">
 
             <TextView
+                android:id="@+id/textinterest"
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal|center_vertical"
-                android:text="Simple Interest"
+                android:text="Interest"
                 android:textSize="24sp" />
             <EditText
-                android:id="@+id/simpleInterest"
-                android:layout_width="100dp"
+                android:id="@+id/result"
+                android:layout_width="160dp"
                 android:layout_height="wrap_content"
                 android:inputType="numberDecimal"
                 android:minHeight="48dp"
@@ -118,13 +128,22 @@
             android:layout_margin="5dp">
 
             <TextView
-                android:id="@+id/output"
+                android:id="@+id/textAmount"
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal|center_vertical"
-                android:text="Result"
+                android:text="Amount"
                 android:textSize="24sp" />
+            <EditText
+                android:id="@+id/resultAmount"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:minHeight="48dp"
+                app:layout_constraintStart_toEndOf="@+id/breadthView"
+                tools:ignore="SpeakableTextPresentCheck"/>
         </LinearLayout>
+
 
     </LinearLayout>
 

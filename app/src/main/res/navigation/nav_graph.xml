@@ -132,6 +132,9 @@
         <action
             android:id="@+id/action_converterMenuFragment_to_dataConverterFragment"
             app:destination="@id/dataConverterFragment" />
+        <action
+            android:id="@+id/action_converterMenuFragment_to_lengthConverterFragment"
+            app:destination="@id/lengthConverterFragment" />
     </fragment>
     <fragment
         android:id="@+id/cuboidFragment"
@@ -238,12 +241,34 @@
         android:name="com.example.everycalc.EconomicsMenuFragment"
         android:label="EconomicsMenuFragment" >
         <action
+            android:id="@+id/action_economicsMenuFragment_to_compoundInterestFragment"
+            app:destination="@id/compoundInterestFragment" />
+        <action
+            android:id="@+id/action_economicsMenuFragment_to_profitLossFragment"
+            app:destination="@id/profitLossFragment" />
+        <action
             android:id="@+id/action_economicsMenuFragment_to_simpleInterestFragment"
             app:destination="@id/simpleInterestFragment" />
     </fragment>
     <fragment
+        android:id="@+id/lengthConverterFragment"
+        android:name="com.example.everycalc.LengthConverterFragment"
+        android:label="fragment_length_converter"
+        tools:layout="@layout/fragment_length_converter" />
+    <fragment
+        android:id="@+id/compoundInterestFragment"
+        android:name="com.example.everycalc.CompoundInterestFragment"
+        android:label="fragment_compound_interest"
+        tools:layout="@layout/fragment_compound_interest" />
+    <fragment
+        android:id="@+id/profitLossFragment"
+        android:name="com.example.everycalc.ProfitLossFragment"
+        android:label="fragment_profit_loss"
+        tools:layout="@layout/fragment_profit_loss" />
+    <fragment
         android:id="@+id/simpleInterestFragment"
         android:name="com.example.everycalc.SimpleInterestFragment"
-        android:label="SimpleInterestFragment" />
+        android:label="fragment_simple_interest"
+        tools:layout="@layout/fragment_simple_interest" />
 
 </navigation>
