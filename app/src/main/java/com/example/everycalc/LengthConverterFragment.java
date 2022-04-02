@@ -30,17 +30,17 @@ public class LengthConverterFragment extends Fragment {
 
         sp1 = view.findViewById(R.id.spfrom);
         sp2 = view.findViewById(R.id.spto);
-        ed1 = view.findViewById(R.id.txtamt);
-        answer = view.findViewById(R.id.textView5);
+        ed1 = view.findViewById(R.id.text_input);
+        answer = view.findViewById(R.id.textView_Result);
 
 
-        String[] from = {"Kilometer","Meter", "Decimeter","Centimeter", "Millimeter", "Micrometer","Mile","Yard"};
-        ArrayAdapter ad = new ArrayAdapter<String>(getContext(),R.layout.support_simple_spinner_dropdown_item,from);
+        String[] from = {"Kilometer","Meter", "Decimeter","Centimeter", "Millimeter", "Micrometer","Mile"};
+        ArrayAdapter ad = new ArrayAdapter<String>(requireContext(),R.layout.support_simple_spinner_dropdown_item,from);
         sp1.setAdapter(ad);
 
 
-        String[] to = {"Kilometer","Meter", "Decimeter","Centimeter", "Millimeter", "Micrometer","Mile","Yard"};
-        ArrayAdapter ad1 = new ArrayAdapter<String>(getContext(),R.layout.support_simple_spinner_dropdown_item,to);
+        String[] to = {"Kilometer","Meter", "Decimeter","Centimeter", "Millimeter", "Micrometer","Mile"};
+        ArrayAdapter ad1 = new ArrayAdapter<String>(requireContext(),R.layout.support_simple_spinner_dropdown_item,to);
         sp2.setAdapter(ad1);
 
         sp1.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
@@ -156,13 +156,13 @@ public class LengthConverterFragment extends Fragment {
                 answer.setText("" + String.format("%.4f mi",tot));
 
             }
-            //7.kilometer to yard
+            /*7.kilometer to yard
             else if (sp1.getSelectedItem().toString() == "Kilometer" && sp2.getSelectedItem().toString() == "Yard") {
                 tot = amt * 1093.61;
                 // Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
                 answer.setText("" + String.format("%.4f yard",tot));
 
-            }
+            }*/
 /*
 2.METER CONVERSION
  */
@@ -425,8 +425,8 @@ public class LengthConverterFragment extends Fragment {
                 //if both spinner are same (Note):-
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
                 answer.setText("" + tot);
-
-            } else {
+            }
+            else {
                 //amt = 0.0;
                 answer.setText("0");
             }
