@@ -114,27 +114,27 @@ CUBIC METER CONVERSION
             if (sp1.getSelectedItem().toString() == "Cubic meter" && sp2.getSelectedItem().toString() == "Litre") {
                 tot = amt * 1000;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + String.format("%.4f", tot));
+                answer.setText("" + String.format("%.4f l", tot));
             }
             //2.Cubic meter to Millilitre
             else if (sp1.getSelectedItem().toString() == "Cubic meter" && sp2.getSelectedItem().toString() == "Millilitre") {
                 tot = amt*1e+6;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + String.format("%.8f", tot));
+                answer.setText("" + String.format("%.4f ml", tot));
 
             }
             //3.Cubic meter to Cubic foot
             else if (sp1.getSelectedItem().toString() == "Cubic meter" && sp2.getSelectedItem().toString() == "Cubic foot") {
                 tot = amt * 35.3147;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + String.format("%.4f", tot));
+                answer.setText("" + String.format("%.4f ft³", tot));
 
             }
             //4.Cubic meter to Cubic inch
             else if (sp1.getSelectedItem().toString() == "Cubic meter" && sp2.getSelectedItem().toString() == "Cubic inch") {
                 tot = amt * 61023.7;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + String.format("%.4f", tot));
+                answer.setText("" + String.format("%.4f in³", tot));
 
             }
 /*
@@ -144,27 +144,27 @@ LITRE CONVERSION
             else if (sp1.getSelectedItem().toString() == "Litre" && sp2.getSelectedItem().toString() == "Cubic meter") {
                 tot = amt / 1000;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + String.format("%.4f", tot));
+                answer.setText("" + String.format("%.4f m³", tot));
             }
             //2.Litre to Millilitre
             else if (sp1.getSelectedItem().toString() == "Litre" && sp2.getSelectedItem().toString() == "Millilitre") {
                 tot = amt * 1000;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + String.format("%.4f", tot));
+                answer.setText("" + String.format("%.4f ml", tot));
 
             }
             //3.Litre to Cubic foot
             else if (sp1.getSelectedItem().toString() == "Litre" && sp2.getSelectedItem().toString() == "Cubic foot") {
                 tot = amt / 28.317;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + String.format("%.4f", tot));
+                answer.setText("" + String.format("%.4f ft³", tot));
 
             }
             //4.Litre to Cubic inch
             else if (sp1.getSelectedItem().toString() == "Litre" && sp2.getSelectedItem().toString() == "Cubic inch") {
                 tot = amt * 61.0237;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + String.format("%.4f", tot));
+                answer.setText("" + String.format("%.4f in³", tot));
 
             }
 /*
@@ -174,27 +174,27 @@ MILLILITRE CONVERSION
             else if (sp1.getSelectedItem().toString() == "Millilitre" && sp2.getSelectedItem().toString() == "Cubic meter") {
                 tot = amt / 1e+6;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + String.format("%.8f", tot));
+                answer.setText("" + String.format("%.4f m³", tot));
             }
             //2.Millilitre to Litre
             else if (sp1.getSelectedItem().toString() == "Millilitre" && sp2.getSelectedItem().toString() == "Litre") {
                 tot = amt / 1000;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + String.format("%.8f", tot));
+                answer.setText("" + String.format("%.4f l", tot));
 
             }
             //3.Millilitre to Cubic foot
             else if (sp1.getSelectedItem().toString() == "Millilitre" && sp2.getSelectedItem().toString() == "Cubic foot") {
                 tot = amt / 28317;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + String.format("%.8f", tot));
+                answer.setText("" + String.format("%.4f ft³", tot));
 
             }
             //4.Millilitre to Cubic inch
             else if (sp1.getSelectedItem().toString() == "Millilitre" && sp2.getSelectedItem().toString() == "Cubic inch") {
                 tot = amt / 16.387;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + String.format("%.8f", tot));
+                answer.setText("" + String.format("%.4f in³", tot));
 
             }
 /*
@@ -204,27 +204,27 @@ CUBIC FOOT CONVERSION
             else if (sp1.getSelectedItem().toString() == "Cubic foot" && sp2.getSelectedItem().toString() == "Cubic meter") {
                 tot = amt / 35.315;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + String.format("%.8f", tot));
+                answer.setText("" + String.format("%.4f m³", tot));
             }
             //2.Cubic foot to Litre
             else if (sp1.getSelectedItem().toString() == "Cubic foot" && sp2.getSelectedItem().toString() == "Litre") {
                 tot = amt * 28.3168;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + String.format("%.8f", tot));
+                answer.setText("" + String.format("%.4f l", tot));
 
             }
             //3.Cubic foot to Millilitre
             else if (sp1.getSelectedItem().toString() == "Cubic foot" && sp2.getSelectedItem().toString() == "Millilitre") {
                 tot = amt * 28317;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + String.format("%.8f", tot));
+                answer.setText("" + String.format("%.4f ml", tot));
 
             }
             //4.Cubic foot to Cubic inch
             else if (sp1.getSelectedItem().toString() == "Cubic foot" && sp2.getSelectedItem().toString() == "Cubic inch") {
                 tot = amt * 1728;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + String.format("%.8f", tot));
+                answer.setText("" + String.format("%.4f in³", tot));
 
             }
 /*
@@ -234,27 +234,27 @@ CUBIC INCH CONVERSION
             else if (sp1.getSelectedItem().toString() == "Cubic inch" && sp2.getSelectedItem().toString() == "Cubic meter") {
                 tot = amt / 61024;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + String.format("%.8f", tot));
+                answer.setText("" + String.format("%.4f m³", tot));
             }
             //2.Cubic inch to Litre
             else if (sp1.getSelectedItem().toString() == "Cubic inch" && sp2.getSelectedItem().toString() == "Litre") {
                 tot = amt / 61.024;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + String.format("%.8f", tot));
+                answer.setText("" + String.format("%.4f l", tot));
 
             }
             //3.Cubic inch to Cubic foot
             else if (sp1.getSelectedItem().toString() == "Cubic inch" && sp2.getSelectedItem().toString() == "Cubic foot") {
                 tot = amt / 1728;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + String.format("%.8f", tot));
+                answer.setText("" + String.format("%.4f ft³", tot));
 
             }
             //4.Cubic inch to Millilitre
             else if (sp1.getSelectedItem().toString() == "Cubic inch" && sp2.getSelectedItem().toString() == "Millilitre") {
                 tot = amt * 16.387;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + String.format("%.8f", tot));
+                answer.setText("" + String.format("%.4f ml", tot));
 
             }
             else if (sp1.getSelectedItem().toString() == sp2.getSelectedItem().toString()) {

@@ -117,27 +117,27 @@ MILES PER HOUR CONVERSION
             if (sp1.getSelectedItem().toString() == "Miles per hour" && sp2.getSelectedItem().toString() == "Foot per second") {
                 tot = amt*1.46667;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + String.format("%.8f",tot));
+                answer.setText("" + String.format("%.4f ft/s",tot));
             }
             //2.Miles per hour to Meter per second
             else if (sp1.getSelectedItem().toString() == "Miles per hour" && sp2.getSelectedItem().toString() == "Meter per second") {
                 tot = amt/2.236936;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + String.format("%.8f",tot));
+                answer.setText("" + String.format("%.4f m/s",tot));
 
             }
             //3.Miles per hour to Kilometer per hour
             else if (sp1.getSelectedItem().toString() == "Miles per hour" && sp2.getSelectedItem().toString() == "Kilometer per hour") {
                 tot = amt*1.60934;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + String.format("%.8f",tot));
+                answer.setText("" + String.format("%.4f km/h",tot));
 
             }
             //4.Miles per hour to Knot
             else if (sp1.getSelectedItem().toString() == "Miles per hour" && sp2.getSelectedItem().toString() == "Knot") {
                 tot = amt/1.150779;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" +String.format("%.8f",tot));
+                answer.setText("" +String.format("%.4f kn",tot));
 
             }
 /*
@@ -147,27 +147,27 @@ MILES PER HOUR CONVERSION
             else if (sp1.getSelectedItem().toString() == "Foot per second" && sp2.getSelectedItem().toString() == "Miles per hour") {
                 tot = amt/1.46667;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + String.format("%.8f",tot));
+                answer.setText("" + String.format("%.4f mi/h",tot));
             }
             //2.Foot per second to Meter per second
             else if (sp1.getSelectedItem().toString() == "Foot per second" && sp2.getSelectedItem().toString() == "Meter per second") {
                 tot = amt/3.28084;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + String.format("%.8f",tot));
+                answer.setText("" + String.format("%.4f m/s",tot));
 
             }
             //3.Foot per second to Kilometer per hour
             else if (sp1.getSelectedItem().toString() == "Foot per second" && sp2.getSelectedItem().toString() == "Kilometer per hour") {
                 tot = amt*1.09728;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + String.format("%.8f",tot));
+                answer.setText("" + String.format("%.4f km/h",tot));
 
             }
             //4.Foot per second to Knot
             else if (sp1.getSelectedItem().toString() == "Foot per second" && sp2.getSelectedItem().toString() == "Knot") {
                 tot = amt/1.68781;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" +String.format("%.8f",tot));
+                answer.setText("" +String.format("%.4f kn",tot));
 
             }
             /*
@@ -177,27 +177,27 @@ MILES PER HOUR CONVERSION
             else if (sp1.getSelectedItem().toString() == "Meter per second" && sp2.getSelectedItem().toString() == "Miles per hour") {
                 tot = amt*2.236936;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + String.format("%.8f",tot));
+                answer.setText("" + String.format("%.4f mi/h",tot));
             }
             //2.Meter per second to Foot per second
             else if (sp1.getSelectedItem().toString() == "Meter per second" && sp2.getSelectedItem().toString() == "Foot per second") {
                 tot = amt*3.28084;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + String.format("%.8f",tot));
+                answer.setText("" + String.format("%.4f ft/s",tot));
 
             }
             //3.Meter per second to Kilometer per hour
             else if (sp1.getSelectedItem().toString() == "Meter per second" && sp2.getSelectedItem().toString() == "Kilometer per hour") {
                 tot = amt*3.6;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + String.format("%.8f",tot));
+                answer.setText("" + String.format("%.4f km/h",tot));
 
             }
             //4.Meter per second to Knot
             else if (sp1.getSelectedItem().toString() == "Meter per second" && sp2.getSelectedItem().toString() == "Knot") {
                 tot = amt*1.943844;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" +String.format("%.8f",tot));
+                answer.setText("" +String.format("%.4f kn",tot));
 
             }
 /*
@@ -207,27 +207,27 @@ KILOMETER PER HOUR CONVERSION
             else if (sp1.getSelectedItem().toString() == "Kilometer per hour" && sp2.getSelectedItem().toString() == "Miles per hour") {
                 tot = amt*0.6213712;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + String.format("%.8f",tot));
+                answer.setText("" + String.format("%.4f mi/h",tot));
             }
             //2.Kilometer per hour to Foot per second
             else if (sp1.getSelectedItem().toString() == "Kilometer per hour" && sp2.getSelectedItem().toString() == "Foot per second") {
                 tot = amt*0.911344;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + String.format("%.8f",tot));
+                answer.setText("" + String.format("%.4f ft/s",tot));
 
             }
             //3.Kilometer per hour to Meter per second
             else if (sp1.getSelectedItem().toString() == "Kilometer per hour" && sp2.getSelectedItem().toString() == "Meter per second") {
                 tot = amt/3.6;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + String.format("%.8f",tot));
+                answer.setText("" + String.format("%.4f m/s",tot));
 
             }
             //4.Kilometer per hour second to Knot
             else if (sp1.getSelectedItem().toString() == "Kilometer per hour" && sp2.getSelectedItem().toString() == "Knot") {
                 tot = amt*0.5399568;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" +String.format("%.8f",tot));
+                answer.setText("" +String.format("%.4f kn",tot));
 
             }
 /*
@@ -237,38 +237,36 @@ KNOT CONVERSION
             else if (sp1.getSelectedItem().toString() == "Knot" && sp2.getSelectedItem().toString() == "Miles per hour") {
                 tot = amt*1.15077945;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + String.format("%.8f",tot));
+                answer.setText("" + String.format("%.4f mi/h",tot));
             }
             //2.Knot to Foot per second
             else if (sp1.getSelectedItem().toString() == "Knot" && sp2.getSelectedItem().toString() == "Foot per second") {
                 tot = amt*1.68781;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + String.format("%.8f",tot));
+                answer.setText("" + String.format("%.4f ft/s",tot));
 
             }
             //3.Knot to Meter per second
             else if (sp1.getSelectedItem().toString() == "Knot" && sp2.getSelectedItem().toString() == "Meter per second") {
                 tot = amt/1.944;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + String.format("%.8f",tot));
+                answer.setText("" + String.format("%.4f m/s",tot));
 
             }
             //4.Knot to Kilometer per hour
             else if (sp1.getSelectedItem().toString() == "Knot" && sp2.getSelectedItem().toString() == "Kilometer per hour") {
                 tot = amt*1.852;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" +String.format("%.8f",tot));
+                answer.setText("" +String.format("%.4f km/h",tot));
 
             }
-
-            else if (sp1.getSelectedItem().toString() ==  sp2.getSelectedItem().toString()) {
+            else if (sp1.getSelectedItem().toString() == sp2.getSelectedItem().toString()) {
                 tot = amt;
                 //if both spinner are same (Note):-
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
                 answer.setText("" + tot);
 
-            }
-            else {
+            } else {
                 //amt = 0.0;
                 answer.setText("0");
             }

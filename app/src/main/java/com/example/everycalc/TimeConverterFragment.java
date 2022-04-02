@@ -118,22 +118,22 @@ public class TimeConverterFragment extends Fragment {
             if (sp1.getSelectedItem().toString() == "Sec" && sp2.getSelectedItem().toString() == "Min") {
                 tot = amt/60;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f",tot));
             }
             else if (sp1.getSelectedItem().toString() == "Sec" && sp2.getSelectedItem().toString() == "Hr") {
                 tot = amt/3600;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f",tot));
             }
             else if (sp1.getSelectedItem().toString() == "Sec" && sp2.getSelectedItem().toString() == "Day") {
                 tot = (amt/3600)/24;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f",tot));
             }
             else if (sp1.getSelectedItem().toString() == "Sec" && sp2.getSelectedItem().toString() == "Year") {
                 tot = ((amt/3600)/24)/365;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f",tot));
             }
 /*
 2.Min CONVERSION
@@ -141,22 +141,22 @@ public class TimeConverterFragment extends Fragment {
             else if (sp1.getSelectedItem().toString() == "Min" && sp2.getSelectedItem().toString() == "Sec") {
                 tot = amt*60;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f",tot));
             }
             else if (sp1.getSelectedItem().toString() == "Min" && sp2.getSelectedItem().toString() == "Hr") {
                 tot = amt/60;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f",tot));
             }
             else if (sp1.getSelectedItem().toString() == "Min" && sp2.getSelectedItem().toString() == "Day") {
                 tot = (amt/60)/24;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f",tot));
             }
             else if (sp1.getSelectedItem().toString() == "Min" && sp2.getSelectedItem().toString() == "Year") {
                 tot = ((amt/60)/24)/365;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f",tot));
             }
             /*
 3.Hour CONVERSION
@@ -164,22 +164,22 @@ public class TimeConverterFragment extends Fragment {
             else if (sp1.getSelectedItem().toString() == "Hr" && sp2.getSelectedItem().toString() == "Sec") {
                 tot = amt*3600;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f",tot));
             }
             else if (sp1.getSelectedItem().toString() == "Hr" && sp2.getSelectedItem().toString() == "Min") {
                 tot = amt*60;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f",tot));
             }
             else if (sp1.getSelectedItem().toString() == "Hr" && sp2.getSelectedItem().toString() == "Day") {
                 tot = amt/24;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f",tot));
             }
             else if (sp1.getSelectedItem().toString() == "Hr" && sp2.getSelectedItem().toString() == "Year") {
                 tot = (amt/24)/365;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f",tot));
             }
                         /*
 4.Day CONVERSION
@@ -187,22 +187,22 @@ public class TimeConverterFragment extends Fragment {
             else if (sp1.getSelectedItem().toString() == "Day" && sp2.getSelectedItem().toString() == "Sec") {
                 tot = amt*3600*24;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f",tot));
             }
             else if (sp1.getSelectedItem().toString() == "Day" && sp2.getSelectedItem().toString() == "Min") {
                 tot = amt*60*24;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f",tot));
             }
             else if (sp1.getSelectedItem().toString() == "Day" && sp2.getSelectedItem().toString() == "Hr") {
                 tot = amt*24;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f",tot));
             }
             else if (sp1.getSelectedItem().toString() == "Day" && sp2.getSelectedItem().toString() == "Year") {
                 tot = amt/365;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f",tot));
             }
                                     /*
 4.Year CONVERSION
@@ -210,25 +210,31 @@ public class TimeConverterFragment extends Fragment {
             else if (sp1.getSelectedItem().toString() == "Year" && sp2.getSelectedItem().toString() == "Sec") {
                 tot = amt*365*24*60*60;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f",tot));
             }
             else if (sp1.getSelectedItem().toString() == "Year" && sp2.getSelectedItem().toString() == "Min") {
                 tot = amt*365*24*60;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f",tot));
             }
             else if (sp1.getSelectedItem().toString() == "Year" && sp2.getSelectedItem().toString() == "Hr") {
                 tot = amt*365*24;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f",tot));
             }
             else if (sp1.getSelectedItem().toString() == "Year" && sp2.getSelectedItem().toString() == "Day") {
                 tot = amt*365;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f",tot));
             }
-            else {
-                amt = 0.0;
+            else if (sp1.getSelectedItem().toString() == sp2.getSelectedItem().toString()) {
+                tot = amt;
+                //if both spinner are same (Note):-
+                //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
+                answer.setText("" + tot);
+
+            } else {
+                //amt = 0.0;
                 answer.setText("0");
             }
 

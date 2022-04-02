@@ -119,12 +119,12 @@ public class TemperatureConverterFragment extends Fragment {
             if (sp1.getSelectedItem().toString() == "Celsius" && sp2.getSelectedItem().toString() == "Fahrenheit") {
                 tot = (amt * 1.8) + 32;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f °F",tot));
             }
             else if (sp1.getSelectedItem().toString() == "Celsius" && sp2.getSelectedItem().toString() == "Kelvin") {
                 tot = amt + 273.15;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f K",tot));
             }
 
  /*
@@ -134,12 +134,12 @@ public class TemperatureConverterFragment extends Fragment {
             else if (sp1.getSelectedItem().toString() == "Fahrenheit" && sp2.getSelectedItem().toString() == "Celsius") {
                 tot = (amt -32)/1.8;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f °C",tot));
             }
             else if (sp1.getSelectedItem().toString() == "Fahrenheit" && sp2.getSelectedItem().toString() == "Kelvin") {
                 tot = (amt -32)/1.8 +273.15;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f K",tot));
             }
 
 /*
@@ -149,16 +149,21 @@ public class TemperatureConverterFragment extends Fragment {
             else if (sp1.getSelectedItem().toString() == "Kelvin" && sp2.getSelectedItem().toString() == "Celsius") {
                 tot = amt - 273.15;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f °C",tot));
             }
             else if (sp1.getSelectedItem().toString() == "Kelvin" && sp2.getSelectedItem().toString() == "Fahrenheit") {
                 tot = (amt - 273.15)*1.8 +32;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f °F",tot));
             }
+            else if (sp1.getSelectedItem().toString() == sp2.getSelectedItem().toString()) {
+                tot = amt;
+                //if both spinner are same (Note):-
+                //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
+                answer.setText("" + tot);
 
-            else {
-                amt = 0.0;
+            } else {
+                //amt = 0.0;
                 answer.setText("0");
             }
 

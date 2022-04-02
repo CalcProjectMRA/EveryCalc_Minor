@@ -115,41 +115,41 @@ SQUARE FOOT CONVERSION
             if (sp1.getSelectedItem().toString() == "Square foot" && sp2.getSelectedItem().toString() == "Square inch") {
                 tot = amt * 144;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + Math.floor(tot*100)/100 + "in²");
+                answer.setText("" + String.format("%.4f in²",tot));
             }
             //2.Square foot to Square yard
             else if (sp1.getSelectedItem().toString() == "Square foot" && sp2.getSelectedItem().toString() == "Square yard") {
                 tot = amt/9;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + Math.floor(tot*100)/100);
+                answer.setText("" + String.format("%.4f yard²",tot));
 
             }
             //3.Square foot to Square meter
             else if (sp1.getSelectedItem().toString() == "Square foot" && sp2.getSelectedItem().toString() == "Square meter") {
                 tot = amt/10.764;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + Math.floor(tot*100)/100);
+                answer.setText("" + String.format("%.4f m²",tot));
 
             }
             //4.Square foot to Square kilometer
             else if (sp1.getSelectedItem().toString() == "Square foot" && sp2.getSelectedItem().toString() == "Square kilometer") {
                 tot = amt/1.076e+7;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f km²",tot));
 
             }
             //5.Square foot to Hectare
             else if (sp1.getSelectedItem().toString() == "Square foot" && sp2.getSelectedItem().toString() == "Hectare") {
                 tot = amt/107639;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + String.format("%.6f",tot));
+                answer.setText("" + String.format("%.4f ha",tot));
 
             }
             //6.Square foot to acre
             else if (sp1.getSelectedItem().toString() == "Square foot" && sp2.getSelectedItem().toString() == "Acre") {
                 tot = amt/43560;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f ac",tot));
 
             }
 /*
@@ -159,41 +159,41 @@ SQUARE INCH CONVERSION
             else if (sp1.getSelectedItem().toString() == "Square inch" && sp2.getSelectedItem().toString() == "Square foot") {
                 tot = amt/144;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f ft²",tot));
             }
             //2.Square inch to Square yard
             else if (sp1.getSelectedItem().toString() == "Square inch" && sp2.getSelectedItem().toString() == "Square yard") {
                 tot = amt/1296;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f yard²",tot));
 
             }
             //3.Square inch to Square meter
             else if (sp1.getSelectedItem().toString() == "Square inch" && sp2.getSelectedItem().toString() == "Square meter") {
                 tot = amt/1550;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f m²",tot));
 
             }
             //4.Square inch to Square kilometer
             else if (sp1.getSelectedItem().toString() == "Square inch" && sp2.getSelectedItem().toString() == "Square kilometer") {
                 tot = amt/1.55e+9;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f km²",tot));
 
             }
             //5.Square inch to Hectare
             else if (sp1.getSelectedItem().toString() == "Square inch" && sp2.getSelectedItem().toString() == "Hectare") {
                 tot = amt/1.55e+7;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f ha",tot));
 
             }
             //6.Square inch to acre
             else if (sp1.getSelectedItem().toString() == "Square inch" && sp2.getSelectedItem().toString() == "Acre") {
                 tot = amt/6.273e+6;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f ac",tot));
 
             }
 /*
@@ -203,41 +203,41 @@ SQUARE YARD CONVERSION
             else if (sp1.getSelectedItem().toString() == "Square yard" && sp2.getSelectedItem().toString() == "Square foot") {
                 tot = amt*9;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f ft²",tot));
             }
             //2.Square yard to Square yard
             else if (sp1.getSelectedItem().toString() == "Square yard" && sp2.getSelectedItem().toString() == "Square inch") {
                 tot = amt*1296;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f in²",tot));
 
             }
             //3.Square yard to Square meter
             else if (sp1.getSelectedItem().toString() == "Square yard" && sp2.getSelectedItem().toString() == "Square meter") {
                 tot = amt/1.196;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f m²",tot));
 
             }
             //4.Square yard to Square kilometer
             else if (sp1.getSelectedItem().toString() == "Square yard" && sp2.getSelectedItem().toString() == "Square kilometer") {
                 tot = amt/1.196e+6;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f km²",tot));
 
             }
             //5.Square yard to Hectare
             else if (sp1.getSelectedItem().toString() == "Square yard" && sp2.getSelectedItem().toString() == "Hectare") {
                 tot = amt/11960;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f ha",tot));
 
             }
             //6.Square yard to acre
             else if (sp1.getSelectedItem().toString() == "Square yard" && sp2.getSelectedItem().toString() == "Acre") {
                 tot = amt/4840;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f ac",tot));
 
             }
             /*
@@ -247,41 +247,41 @@ SQUARE METER CONVERSION
             else if (sp1.getSelectedItem().toString() == "Square meter" && sp2.getSelectedItem().toString() == "Square foot") {
                 tot = amt*10.764;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f ft²",tot));
             }
             //2.Square meter to Square inch
             else if (sp1.getSelectedItem().toString() == "Square meter" && sp2.getSelectedItem().toString() == "Square inch") {
                 tot = amt*1550;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f in²",tot));
 
             }
             //3.Square meter to Square yard
             else if (sp1.getSelectedItem().toString() == "Square meter" && sp2.getSelectedItem().toString() == "Square yard") {
                 tot = amt*1.196;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f yard²",tot));
 
             }
             //4.Square meter to Square kilometer
             else if (sp1.getSelectedItem().toString() == "Square meter" && sp2.getSelectedItem().toString() == "Square kilometer") {
                 tot = amt/1e+6;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f km²",tot));
 
             }
             //5.Square meter to Hectare
             else if (sp1.getSelectedItem().toString() == "Square meter" && sp2.getSelectedItem().toString() == "Hectare") {
                 tot = amt/10000;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f ha",tot));
 
             }
             //6.Square meter to acre
             else if (sp1.getSelectedItem().toString() == "Square meter" && sp2.getSelectedItem().toString() == "Acre") {
                 tot = amt/4047;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f ac",tot));
 
             }
 
@@ -292,41 +292,41 @@ SQUARE KILOMETER CONVERSION
             else if (sp1.getSelectedItem().toString() == "Square kilometer" && sp2.getSelectedItem().toString() == "Square foot") {
                 tot = amt*1.076e+7;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f ft²",tot));
             }
             //2.Square kilometer to Square inch
             else if (sp1.getSelectedItem().toString() == "Square kilometer" && sp2.getSelectedItem().toString() == "Square inch") {
                 tot = amt*1.55e+9;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f in²",tot));
 
             }
             //3.Square kilometer to Square yard
             else if (sp1.getSelectedItem().toString() == "Square kilometer" && sp2.getSelectedItem().toString() == "Square yard") {
                 tot = amt*1.196e+6;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f yard²",tot));
 
             }
             //4.Square kilometer to Square meter
             else if (sp1.getSelectedItem().toString() == "Square kilometer" && sp2.getSelectedItem().toString() == "Square meter") {
                 tot = amt*1e+6;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f m²",tot));
 
             }
             //5.Square kilometer to Hectare
             else if (sp1.getSelectedItem().toString() == "Square kilometer" && sp2.getSelectedItem().toString() == "Hectare") {
                 tot = amt*100;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f ha",tot));
 
             }
             //6.Square kilometer to acre
             else if (sp1.getSelectedItem().toString() == "Square kilometer" && sp2.getSelectedItem().toString() == "Acre") {
                 tot = amt*247.105;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f ac",tot));
 
             }
             /*
@@ -336,41 +336,41 @@ HECTARE CONVERSION
             else if (sp1.getSelectedItem().toString() == "Hectare" && sp2.getSelectedItem().toString() == "Square foot") {
                 tot = amt*107639;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f ft²",tot));
             }
             //2.Hectare to Square inch
             else if (sp1.getSelectedItem().toString() == "Hectare" && sp2.getSelectedItem().toString() == "Square inch") {
                 tot = amt*1.55e+7;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f in²",tot));
 
             }
             //3.Hectare to Square yard
             else if (sp1.getSelectedItem().toString() == "Hectare" && sp2.getSelectedItem().toString() == "Square yard") {
                 tot = amt*11960;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f yard²",tot));
 
             }
             //4.Hectare to Square meter
             else if (sp1.getSelectedItem().toString() == "Hectare" && sp2.getSelectedItem().toString() == "Square meter") {
                 tot = amt*10000;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f m²",tot));
 
             }
             //5.Hectare to Square kilometer
             else if (sp1.getSelectedItem().toString() == "Hectare" && sp2.getSelectedItem().toString() == "Square kilometer") {
                 tot = amt/100;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f km²",tot));
 
             }
             //6.Hectare to acre
             else if (sp1.getSelectedItem().toString() == "Hectare" && sp2.getSelectedItem().toString() == "Acre") {
                 tot = amt*2.47105;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f ac",tot));
 
             }
             /*
@@ -380,52 +380,51 @@ ACRE CONVERSION
             else if (sp1.getSelectedItem().toString() == "Acre" && sp2.getSelectedItem().toString() == "Square foot") {
                 tot = amt*43560;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f ft²",tot));
             }
             //2.Acre to Square inch
             else if (sp1.getSelectedItem().toString() == "Acre" && sp2.getSelectedItem().toString() == "Square inch") {
                 tot = amt*6.273e+6;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f in²",tot));
 
             }
             //3.Acre to Square yard
             else if (sp1.getSelectedItem().toString() == "Acre" && sp2.getSelectedItem().toString() == "Square yard") {
                 tot = amt*4840;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f yard²",tot));
 
             }
             //4.Acre to Square meter
             else if (sp1.getSelectedItem().toString() == "Acre" && sp2.getSelectedItem().toString() == "Square meter") {
                 tot = amt*4046.86;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f m²",tot));
 
             }
             //5.Acre to Square kilometer
             else if (sp1.getSelectedItem().toString() == "Acre" && sp2.getSelectedItem().toString() == "Square kilometer") {
                 tot = amt/247;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f km²",tot));
 
             }
             //6.Acre to Hectare
             else if (sp1.getSelectedItem().toString() == "Acre" && sp2.getSelectedItem().toString() == "Hectare") {
                 tot = amt/2.47105;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f ha",tot));
 
             }
-            else if (sp1.getSelectedItem().toString() ==  sp2.getSelectedItem().toString()) {
+            else if (sp1.getSelectedItem().toString() == sp2.getSelectedItem().toString()) {
                 tot = amt;
                 //if both spinner are same (Note):-
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
                 answer.setText("" + tot);
 
-            }
-            else {
-                amt = 0.0;
+            } else {
+                //amt = 0.0;
                 answer.setText("0");
             }
 

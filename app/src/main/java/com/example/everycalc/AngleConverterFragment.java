@@ -116,34 +116,34 @@ DEGREE CONVERSION
             if (sp1.getSelectedItem().toString() == "Degree" && sp2.getSelectedItem().toString() == "Gradian") {
                 tot = amt * 200/180;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + String.format("%.8f",tot));
+                answer.setText("" + String.format("%.4f grad",tot));
             }
             //2.Degree to Milliradian
             else if (sp1.getSelectedItem().toString() == "Degree" && sp2.getSelectedItem().toString() == "Milliradian") {
                 tot = amt*(1000*3.14159265358/180);
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + String.format("%.8f",tot));
+                answer.setText("" + String.format("%.4f mrad",tot));
 
             }
             //3.Degree to Minute of Arc
             else if (sp1.getSelectedItem().toString() == "Degree" && sp2.getSelectedItem().toString() == "Minute of Arc") {
                 tot = amt*60;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + String.format("%.8f",tot));
+                answer.setText("" + String.format("%.4f '",tot));
 
             }
             //4.Degree to Radian
             else if (sp1.getSelectedItem().toString() == "Degree" && sp2.getSelectedItem().toString() == "Radian") {
                 tot = amt*0.0174533;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" +String.format("%.8f",tot));
+                answer.setText("" + String.format("%.4f rad",tot));
 
             }
             //5.Degree to Second of Arc
             else if (sp1.getSelectedItem().toString() == "Degree" && sp2.getSelectedItem().toString() == "Second of Arc") {
                 tot = amt*3600;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + String.format("%.6f",tot));
+                answer.setText("" + String.format("%.4f ''",tot));
 
             }
             /*
@@ -153,34 +153,34 @@ GRADIAN CONVERSION
             else if (sp1.getSelectedItem().toString() == "Gradian" && sp2.getSelectedItem().toString() == "Degree") {
                 tot = amt * 0.9;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + String.format("%.4f",tot));
+                answer.setText("" + String.format("%.4f °",tot));
             }
             //2.Gradian to Milliradian
             else if (sp1.getSelectedItem().toString() == "Gradian" && sp2.getSelectedItem().toString() == "Milliradian") {
                 tot = amt * 15.7079633;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + String.format("%.8f",tot));
+                answer.setText("" + String.format("%.4f mrad",tot));
 
             }
             //3.Gradian to Minute of Arc
             else if (sp1.getSelectedItem().toString() == "Gradian" && sp2.getSelectedItem().toString() == "Minute of Arc") {
                 tot = amt*54;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + String.format("%.4f",tot));
+                answer.setText("" + String.format("%.4f '",tot));
 
             }
             //4.Gradian to Radian
             else if (sp1.getSelectedItem().toString() == "Gradian" && sp2.getSelectedItem().toString() == "Radian") {
                 tot = amt*0.0157079633;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" +String.format("%.8f",tot));
+                answer.setText("" + String.format("%.4f rad",tot));
 
             }
             //5.Gradian to Second of Arc
             else if (sp1.getSelectedItem().toString() == "Gradian" && sp2.getSelectedItem().toString() == "Second of Arc") {
                 tot = amt*3240;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + String.format("%.6f",tot));
+                answer.setText("" + String.format("%.4f ''",tot));
 
             }
             /*
@@ -190,34 +190,34 @@ MILLIRADIAN CONVERSION
             else if (sp1.getSelectedItem().toString() == "Milliradian" && sp2.getSelectedItem().toString() == "Gradian") {
                 tot = amt * 0.063662;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + String.format("%.4f",tot));
+                answer.setText("" + String.format("%.4f grad",tot));
             }
             //2.Milliradian to Degree
             else if (sp1.getSelectedItem().toString() == "Milliradian" && sp2.getSelectedItem().toString() == "Degree") {
                 tot = amt*180/(1000*3.14159265358);
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + String.format("%.8f",tot));
+                answer.setText("" + String.format("%.4f °",tot));
 
             }
             //3.Milliradian to Minute of Arc
             else if (sp1.getSelectedItem().toString() == "Milliradian" && sp2.getSelectedItem().toString() == "Minute of Arc") {
                 tot = amt*60*180/(1000*3.14159265358);
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + String.format("%.8f",tot));
+                answer.setText("" + String.format("%.4f '",tot));
 
             }
             //4.Milliradian to Radian
             else if (sp1.getSelectedItem().toString() == "Milliradian" && sp2.getSelectedItem().toString() == "Radian") {
                 tot = amt/1000;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" +String.format("%.8f",tot));
+                answer.setText("" + String.format("%.4f rad",tot));
 
             }
             //5.Milliradian to Second of Arc
             else if (sp1.getSelectedItem().toString() == "Milliradian" && sp2.getSelectedItem().toString() == "Second of Arc") {
                 tot = amt*3600*180/(1000*3.14159265358);
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + String.format("%.6f",tot));
+                answer.setText("" + String.format("%.4f ''",tot));
 
             }
             /*
@@ -227,34 +227,34 @@ MINUTE OF ARC CONVERSION
             else if (sp1.getSelectedItem().toString() == "Minute of Arc" && sp2.getSelectedItem().toString() == "Gradian") {
                 tot = amt/54;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + String.format("%.8f",tot));
+                answer.setText("" + String.format("%.4f grad",tot));
             }
             //2.Minute of Arc to Milliradian
             else if (sp1.getSelectedItem().toString() == "Minute of Arc" && sp2.getSelectedItem().toString() == "Milliradian") {
                 tot = amt*1000*3.14159265358/(180*60);
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + String.format("%.8f",tot));
+                answer.setText("" + String.format("%.4f mrad",tot));
 
             }
             //3.Minute of Arc to Degree
             else if (sp1.getSelectedItem().toString() == "Minute of Arc" && sp2.getSelectedItem().toString() == "Degree") {
                 tot = amt/60;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + String.format("%.8f",tot));
+                answer.setText("" + String.format("%.4f °",tot));
 
             }
             //4.Minute of Arc to Radian
             else if (sp1.getSelectedItem().toString() == "Minute of Arc" && sp2.getSelectedItem().toString() == "Radian") {
                 tot = amt*3.14159265358/(60*180);
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" +String.format("%.8f",tot));
+                answer.setText("" + String.format("%.4f rad",tot));
 
             }
             //5.Minute of Arc to Second of Arc
             else if (sp1.getSelectedItem().toString() == "Minute of Arc" && sp2.getSelectedItem().toString() == "Second of Arc") {
                 tot = amt*60;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + String.format("%.6f",tot));
+                answer.setText("" + String.format("%.4f ''",tot));
 
             }
             /*
@@ -264,34 +264,34 @@ RADIAN CONVERSION
             else if (sp1.getSelectedItem().toString() == "Radian" && sp2.getSelectedItem().toString() == "Gradian") {
                 tot = amt * 200/3.14159265358;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + String.format("%.8f",tot));
+                answer.setText("" + String.format("%.4f grad",tot));
             }
             //2.Radian to Milliradian
             else if (sp1.getSelectedItem().toString() == "Radian" && sp2.getSelectedItem().toString() == "Milliradian") {
                 tot = amt*1000;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + String.format("%.8f",tot));
+                answer.setText("" + String.format("%.4f mrad",tot));
 
             }
             //3.Radian to Minute of Arc
             else if (sp1.getSelectedItem().toString() == "Radian" && sp2.getSelectedItem().toString() == "Minute of Arc") {
                 tot = amt*60*180/3.14159265358;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + String.format("%.8f",tot));
+                answer.setText("" + String.format("%.4f '",tot));
 
             }
             //4.Radian to Degree
             else if (sp1.getSelectedItem().toString() == "Radian" && sp2.getSelectedItem().toString() == "Degree") {
                 tot = amt*180/3.14159265358;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" +String.format("%.8f",tot));
+                answer.setText("" + String.format("%.4f °",tot));
 
             }
             //5.Radian to Second of Arc
             else if (sp1.getSelectedItem().toString() == "Radian" && sp2.getSelectedItem().toString() == "Second of Arc") {
                 tot = amt*3600*180/3.14159265358;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + String.format("%.6f",tot));
+                answer.setText("" + String.format("%.4f ''",tot));
 
             }
             /*
@@ -301,34 +301,34 @@ SECOND OF ARC CONVERSION
             else if (sp1.getSelectedItem().toString() == "Second of Arc" && sp2.getSelectedItem().toString() == "Gradian") {
                 tot = amt / 3240;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + String.format("%.8f",tot));
+                answer.setText("" + String.format("%.4f grad",tot));
             }
             //2.Second of Arc to Milliradian
             else if (sp1.getSelectedItem().toString() == "Second of Arc" && sp2.getSelectedItem().toString() == "Milliradian") {
                 tot = amt*1000*3.14159265358/(180*3600);
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + String.format("%.8f",tot));
+                answer.setText("" + String.format("%.4f mrad",tot));
 
             }
             //3.Second of Arc to Minute of Arc
             else if (sp1.getSelectedItem().toString() == "Second of Arc" && sp2.getSelectedItem().toString() == "Minute of Arc") {
                 tot = amt/60;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + String.format("%.8f",tot));
+                answer.setText("" + String.format("%.4f '",tot));
 
             }
             //4.Second of Arc to Radian
             else if (sp1.getSelectedItem().toString() == "Second of Arc" && sp2.getSelectedItem().toString() == "Radian") {
                 tot = amt*3.14159265358/(180*3600);
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" +String.format("%.8f",tot));
+                answer.setText("" +String.format("%.4f rad",tot));
 
             }
             //5.Second of Arc to Degree
             else if (sp1.getSelectedItem().toString() == "Second of Arc" && sp2.getSelectedItem().toString() == "Degree") {
                 tot = amt/3600;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + String.format("%.6f",tot));
+                answer.setText("" + String.format("%.4f °",tot));
 
             }
             else if (sp1.getSelectedItem().toString() ==  sp2.getSelectedItem().toString()) {

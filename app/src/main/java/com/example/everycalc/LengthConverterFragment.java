@@ -119,48 +119,48 @@ public class LengthConverterFragment extends Fragment {
             if (sp1.getSelectedItem().toString() == "Kilometer" && sp2.getSelectedItem().toString() == "Meter") {
                 tot = amt * 1000;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f m",tot));
             }
             //2.kilometer to Decimeter
             else if (sp1.getSelectedItem().toString() == "Kilometer" && sp2.getSelectedItem().toString() == "Decimeter") {
                 tot = amt * 10000;
                 // Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f dm",tot));
 
             }
             //3/kilometer to Centimeter
             else if (sp1.getSelectedItem().toString() == "Kilometer" && sp2.getSelectedItem().toString() == "Centimeter") {
                 tot = amt * 100000;
                 // Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f cm",tot));
 
             }
             //4.kilometer to Millimeter
             else if (sp1.getSelectedItem().toString() == "Kilometer" && sp2.getSelectedItem().toString() == "Millimeter") {
                 tot = amt * 1000000;
                 // Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f mm",tot));
 
             }
             //5.kilometer to micrometer
             else if (sp1.getSelectedItem().toString() == "Kilometer" && sp2.getSelectedItem().toString() == "Micrometer") {
                 tot = amt * 1000000000;
                 // Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f μm",tot));
 
             }
             //6.kilometer to mile
             else if (sp1.getSelectedItem().toString() == "Kilometer" && sp2.getSelectedItem().toString() == "Mile") {
                 tot = amt / 1.609344;
                 // Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f mi",tot));
 
             }
             /*7.kilometer to yard
             else if (sp1.getSelectedItem().toString() == "Kilometer" && sp2.getSelectedItem().toString() == "Yard") {
                 tot = amt * 1093.61;
                 // Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f yard",tot));
 
             }*/
 /*
@@ -170,42 +170,41 @@ public class LengthConverterFragment extends Fragment {
             else if (sp1.getSelectedItem().toString() == "Meter" && sp2.getSelectedItem().toString() == "Kilometer") {
                 tot = amt / 1000;
                 // Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f km",tot));
 
             }
             //2.meter to decimeter
             else if (sp1.getSelectedItem().toString() == "Meter" && sp2.getSelectedItem().toString() == "Decimeter") {
                 tot = amt * 10;
                 // Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
-
+                answer.setText("" + String.format("%.4f dm",tot));
             }
             //3.meter to centimeter
             else if (sp1.getSelectedItem().toString() == "Meter" && sp2.getSelectedItem().toString() == "Centimeter") {
                 tot = amt * 100;
                 // Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f cm",tot));
 
             }
             //4.meter to centimeter
             else if (sp1.getSelectedItem().toString() == "Meter" && sp2.getSelectedItem().toString() == "Millimeter") {
                 tot = amt * 1000;
                 // Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f mm",tot));
 
             }
             //5.meter to centimeter
             else if (sp1.getSelectedItem().toString() == "Meter" && sp2.getSelectedItem().toString() == "Micrometer") {
                 tot = amt * 1000000;
                 // Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f μm",tot));
 
             }
             //6.meter to mile
             else if (sp1.getSelectedItem().toString() == "Meter" && sp2.getSelectedItem().toString() == "Mile") {
                 tot = amt / 1609.344;
                 // Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f mi",tot));
 
             }
 /*
@@ -215,42 +214,42 @@ public class LengthConverterFragment extends Fragment {
             else if (sp1.getSelectedItem().toString() == "Decimeter" && sp2.getSelectedItem().toString() == "Kilometer") {
                 tot = amt / 10000;
                 // Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f km",tot));
 
             }
             //2.decimeter to meter
             else if (sp1.getSelectedItem().toString() == "Decimeter" && sp2.getSelectedItem().toString() == "Meter") {
                 tot = amt / 10;
                 // Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f m",tot));
 
             }
             //3.decimeter to centimeter
             else if (sp1.getSelectedItem().toString() == "Decimeter" && sp2.getSelectedItem().toString() == "Centimeter") {
                 tot = amt * 10;
                 // Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f cm",tot));
 
             }
             //4.decimeter to millimeter
             else if (sp1.getSelectedItem().toString() == "Decimeter" && sp2.getSelectedItem().toString() == "Millimeter") {
                 tot = amt * 10;
                 // Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f mm",tot));
 
             }
             //5.decimeter to micrometer
             else if (sp1.getSelectedItem().toString() == "Decimeter" && sp2.getSelectedItem().toString() == "Micrometer") {
                 tot = amt * 100000;
                 // Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f μm",tot));
 
             }
             //6.decimeter to mile
             else if (sp1.getSelectedItem().toString() == "Decimeter" && sp2.getSelectedItem().toString() == "Mile") {
                 tot = amt / 16093.44;
                 // Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f mi",tot));
 
             }
 /*
@@ -260,42 +259,42 @@ public class LengthConverterFragment extends Fragment {
             else if (sp1.getSelectedItem().toString() == "Centimeter" && sp2.getSelectedItem().toString() == "Kilometer") {
                 tot = amt / 100000;
                 // Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f km",tot));
 
             }
             //2.Centimeter to meter
             else if (sp1.getSelectedItem().toString() == "Centimeter" && sp2.getSelectedItem().toString() == "Meter") {
                 tot = amt / 100;
                 // Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f m",tot));
 
             }
             //3.Centimeter to decimeter
             else if (sp1.getSelectedItem().toString() == "Centimeter" && sp2.getSelectedItem().toString() == "Decimeter") {
                 tot = amt / 10;
                 // Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f dm",tot));
 
             }
             //4.Centimeter to Millimeter
             else if (sp1.getSelectedItem().toString() == "Centimeter" && sp2.getSelectedItem().toString() == "Millimeter") {
                 tot = amt * 10;
                 // Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f mm",tot));
 
             }
             //5.Centimeter to micrometer
             else if (sp1.getSelectedItem().toString() == "Centimeter" && sp2.getSelectedItem().toString() == "Micrometer") {
                 tot = amt * 10000;
                 // Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f μm",tot));
 
             }
             //6.Centimeter to mile
             else if (sp1.getSelectedItem().toString() == "Centimeter" && sp2.getSelectedItem().toString() == "Mile") {
                 tot = amt / 160934.4;
                 // Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f mi",tot));
 
             }
 /*
@@ -305,42 +304,42 @@ public class LengthConverterFragment extends Fragment {
             else if (sp1.getSelectedItem().toString() == "Millimeter" && sp2.getSelectedItem().toString() == "Kilometer") {
                 tot = amt / 1000000;
                 // Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f km",tot));
 
             }
             //2.millimeter to meter
             else if (sp1.getSelectedItem().toString() == "Millimeter" && sp2.getSelectedItem().toString() == "Meter") {
                 tot = amt / 1000;
                 // Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f m",tot));
 
             }
             //3.millimeter to decimeter
             else if (sp1.getSelectedItem().toString() == "Millimeter" && sp2.getSelectedItem().toString() == "Decimeter") {
                 tot = amt / 100;
                 // Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f dm",tot));
 
             }
             //4.millimeter to centimeter
             else if (sp1.getSelectedItem().toString() == "Millimeter" && sp2.getSelectedItem().toString() == "Centimeter") {
                 tot = amt / 10;
                 // Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f cm",tot));
 
             }
             //5.millimeter to micrometer
             else if (sp1.getSelectedItem().toString() == "Millimeter" && sp2.getSelectedItem().toString() == "Micrometer") {
                 tot = amt * 1000;
                 // Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f μm",tot));
 
             }
             //6.millimeter to mile
             else if (sp1.getSelectedItem().toString() == "Millimeter" && sp2.getSelectedItem().toString() == "Mile") {
                 tot = amt / 1609344;
                 // Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f mi",tot));
 
             }
 /*
@@ -350,37 +349,37 @@ public class LengthConverterFragment extends Fragment {
             else if (sp1.getSelectedItem().toString() == "Micrometer" && sp2.getSelectedItem().toString() == "Kilometer") {
                 tot = amt / 1000000000;
                 // Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f km",tot));
             }
             //2.micrometer to meter
             else if (sp1.getSelectedItem().toString() == "Micrometer" && sp2.getSelectedItem().toString() == "Meter") {
                 tot = amt / 1000000;
                 // Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f m",tot));
             }
             //3.micrometer to decimeter
             else if (sp1.getSelectedItem().toString() == "Micrometer" && sp2.getSelectedItem().toString() == "Decimeter") {
                 tot = amt / 100000;
                 // Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f dm",tot));
             }
             //4.micrometer to centimeter
             else if (sp1.getSelectedItem().toString() == "Micrometer" && sp2.getSelectedItem().toString() == "Centimeter") {
                 tot = amt / 10000;
                 // Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f cm",tot));
             }
             //5.micrometer to millimeter
             else if (sp1.getSelectedItem().toString() == "Micrometer" && sp2.getSelectedItem().toString() == "Millimeter") {
                 tot = amt / 1000;
                 // Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f mm",tot));
             }
             //6.micrometer to mile
             else if (sp1.getSelectedItem().toString() == "Micrometer" && sp2.getSelectedItem().toString() == "Mile") {
                 tot = amt / 1.609e+9;
                 // Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f mi",tot));
             }
 /*
 7.mile CONVERSION
@@ -389,47 +388,46 @@ public class LengthConverterFragment extends Fragment {
             else if (sp1.getSelectedItem().toString() == "Mile" && sp2.getSelectedItem().toString() == "Kilometer") {
                 tot = amt * 1.609344;
                 // Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f km",tot));
             }
             //2.mile to meter
             else if (sp1.getSelectedItem().toString() == "Mile" && sp2.getSelectedItem().toString() == "Meter") {
                 tot = amt * 1609.344;
                 // Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f m",tot));
             }
             //3.mile to decimeter
             else if (sp1.getSelectedItem().toString() == "Mile" && sp2.getSelectedItem().toString() == "Decimeter") {
                 tot = amt * 16093.44;
                 // Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f dm",tot));
             }
             //4.mile to centi
             else if (sp1.getSelectedItem().toString() == "Mile" && sp2.getSelectedItem().toString() == "Centimeter") {
                 tot = amt * 160934.4;
                 // Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f cm",tot));
             }
             //5.mile to millimeter
             else if (sp1.getSelectedItem().toString() == "Mile" && sp2.getSelectedItem().toString() == "Millimeter") {
                 tot = amt * 1609344;
                 // Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f mm",tot));
             }
             //6.mile to micrometer
             else if (sp1.getSelectedItem().toString() == "Mile" && sp2.getSelectedItem().toString() == "Micrometer") {
                 tot = amt * 1.609e+9;
                 // Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f μm",tot));
             }
-            else if (sp1.getSelectedItem().toString() ==  sp2.getSelectedItem().toString()) {
+            else if (sp1.getSelectedItem().toString() == sp2.getSelectedItem().toString()) {
                 tot = amt;
                 //if both spinner are same (Note):-
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
                 answer.setText("" + tot);
-
             }
             else {
-                amt = 0.0;
+                //amt = 0.0;
                 answer.setText("0");
             }
 

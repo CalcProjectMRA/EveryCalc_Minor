@@ -119,43 +119,36 @@ public class MassConverterFragment extends Fragment {
             if (sp1.getSelectedItem().toString() == "Kilogram" && sp2.getSelectedItem().toString() == "gram") {
                 tot = amt * 1000;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f g",tot));
             }
             //2.kilogram to Decigram
             else if (sp1.getSelectedItem().toString() == "Kilogram" && sp2.getSelectedItem().toString() == "Decigram") {
                 tot = amt * 10000;
                 // Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f dg",tot));
 
             }
             //3/kilogram to Centigram
             else if (sp1.getSelectedItem().toString() == "Kilogram" && sp2.getSelectedItem().toString() == "Centigram") {
                 tot = amt * 100000;
                 // Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f cg",tot));
 
             }
             //4.kilogram to Milligram
             else if (sp1.getSelectedItem().toString() == "Kilogram" && sp2.getSelectedItem().toString() == "Milligram") {
                 tot = amt * 1000000;
                 // Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f mg",tot));
 
             }
             //5.kilogram to microgram
             else if (sp1.getSelectedItem().toString() == "Kilogram" && sp2.getSelectedItem().toString() == "Microgram") {
                 tot = amt * 1000000000;
                 // Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f μg",tot));
 
             }
-//                //6.kilogram to Nanogram
-//                else if (sp1.getSelectedItem().toString() == "Kilogram" && sp2.getSelectedItem().toString() == "Nanogram") {
-//                    tot = (double)10000000000 * amt ;
-//                    // Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-//                    answer.setText("" + tot);
-//
-//                }
 
 /*
 2.gram CONVERSION
@@ -164,35 +157,35 @@ public class MassConverterFragment extends Fragment {
             else if (sp1.getSelectedItem().toString() == "gram" && sp2.getSelectedItem().toString() == "Kilogram") {
                 tot = amt / 1000;
                 // Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f kg",tot));
 
             }
             //2.gram to decigram
             else if (sp1.getSelectedItem().toString() == "gram" && sp2.getSelectedItem().toString() == "Decigram") {
                 tot = amt * 10;
                 // Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f dg",tot));
 
             }
             //3.gram to centigram
             else if (sp1.getSelectedItem().toString() == "gram" && sp2.getSelectedItem().toString() == "Centigram") {
                 tot = amt * 100;
                 // Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f cg",tot));
 
             }
             //4.gram to centigram
             else if (sp1.getSelectedItem().toString() == "gram" && sp2.getSelectedItem().toString() == "Milligram") {
                 tot = amt * 1000;
                 // Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f mg",tot));
 
             }
             //5.gram to centigram
             else if (sp1.getSelectedItem().toString() == "gram" && sp2.getSelectedItem().toString() == "Microgram") {
                 tot = amt * 1000000;
                 // Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f μg",tot));
 
             }
 
@@ -203,35 +196,35 @@ public class MassConverterFragment extends Fragment {
             else if (sp1.getSelectedItem().toString() == "Decigram" && sp2.getSelectedItem().toString() == "Kilogram") {
                 tot = amt / 10000;
                 // Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f kg",tot));
 
             }
             //2.decigram to gram
             else if (sp1.getSelectedItem().toString() == "Decigram" && sp2.getSelectedItem().toString() == "gram") {
                 tot = amt / 10;
                 // Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f g",tot));
 
             }
             //3.decigram to centigram
             else if (sp1.getSelectedItem().toString() == "Decigram" && sp2.getSelectedItem().toString() == "Centigram") {
                 tot = amt * 10;
                 // Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f cg",tot));
 
             }
             //4.decigram to milligram
             else if (sp1.getSelectedItem().toString() == "Decigram" && sp2.getSelectedItem().toString() == "Milligram") {
                 tot = amt * 10;
                 // Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f mg",tot));
 
             }
             //5.decigram to microgram
             else if (sp1.getSelectedItem().toString() == "Decigram" && sp2.getSelectedItem().toString() == "Microgram") {
                 tot = amt * 100000;
                 // Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f μg",tot));
 
             }
 
@@ -242,42 +235,34 @@ public class MassConverterFragment extends Fragment {
             else if (sp1.getSelectedItem().toString() == "Centigram" && sp2.getSelectedItem().toString() == "Kilogram") {
                 tot = amt / 100000;
                 // Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f kg",tot));
 
             }
             //2.Centigram to gram
             else if (sp1.getSelectedItem().toString() == "Centigram" && sp2.getSelectedItem().toString() == "gram") {
                 tot = amt / 100;
                 // Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
-
+                answer.setText("" + String.format("%.4f g",tot));
             }
             //3.Centigram to decigram
             else if (sp1.getSelectedItem().toString() == "Centigram" && sp2.getSelectedItem().toString() == "Decigram") {
                 tot = amt / 10;
                 // Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f dg",tot));
 
             }
             //4.Centigram to Milligram
             else if (sp1.getSelectedItem().toString() == "Centigram" && sp2.getSelectedItem().toString() == "Milligram") {
                 tot = amt * 10;
                 // Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f mg",tot));
 
             }
             //5.Centigram to microgram
             else if (sp1.getSelectedItem().toString() == "Centigram" && sp2.getSelectedItem().toString() == "Microgram") {
                 tot = amt * 10000;
                 // Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
-
-            }
-            //6.Centigram to mile
-            else if (sp1.getSelectedItem().toString() == "Centigram" && sp2.getSelectedItem().toString() == "Mile") {
-                tot = amt / 160934.4;
-                // Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f μg", tot));
 
             }
 /*
@@ -287,35 +272,35 @@ public class MassConverterFragment extends Fragment {
             else if (sp1.getSelectedItem().toString() == "Milligram" && sp2.getSelectedItem().toString() == "Kilogram") {
                 tot = amt / 1000000;
                 // Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f kg",tot));
 
             }
             //2.milligram to gram
             else if (sp1.getSelectedItem().toString() == "Milligram" && sp2.getSelectedItem().toString() == "gram") {
                 tot = amt / 1000;
                 // Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f g",tot));
 
             }
             //3.milligram to decigram
             else if (sp1.getSelectedItem().toString() == "Milligram" && sp2.getSelectedItem().toString() == "Decigram") {
                 tot = amt / 100;
                 // Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f dg",tot));
 
             }
             //4.milligram to centigram
             else if (sp1.getSelectedItem().toString() == "Milligram" && sp2.getSelectedItem().toString() == "Centigram") {
                 tot = amt / 10;
                 // Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f cg",tot));
 
             }
             //5.milligram to microgram
             else if (sp1.getSelectedItem().toString() == "Milligram" && sp2.getSelectedItem().toString() == "Microgram") {
                 tot = amt * 1000;
                 // Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f μg",tot));
 
             }
 
@@ -326,35 +311,40 @@ public class MassConverterFragment extends Fragment {
             else if (sp1.getSelectedItem().toString() == "Microgram" && sp2.getSelectedItem().toString() == "Kilogram") {
                 tot = amt / 1000000000;
                 // Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f kg",tot));
             }
             //2.microgram to gram
             else if (sp1.getSelectedItem().toString() == "Microgram" && sp2.getSelectedItem().toString() == "gram") {
                 tot = amt / 1000000;
                 // Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f g",tot));
             }
             //3.microgram to decigram
             else if (sp1.getSelectedItem().toString() == "Microgram" && sp2.getSelectedItem().toString() == "Decigram") {
                 tot = amt / 100000;
                 // Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f dg",tot));
             }
             //4.microgram to centigram
             else if (sp1.getSelectedItem().toString() == "Microgram" && sp2.getSelectedItem().toString() == "Centigram") {
                 tot = amt / 10000;
                 // Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f cg",tot));
             }
             //5.microgram to milligram
             else if (sp1.getSelectedItem().toString() == "Microgram" && sp2.getSelectedItem().toString() == "Milligram") {
                 tot = amt / 1000;
                 // Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f mg",tot));
             }
+            else if (sp1.getSelectedItem().toString() == sp2.getSelectedItem().toString()) {
+                tot = amt;
+                //if both spinner are same (Note):-
+                //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
+                answer.setText("" + tot);
 
-            else {
-                amt = 0.0;
+            } else {
+                //amt = 0.0;
                 answer.setText("0");
             }
 

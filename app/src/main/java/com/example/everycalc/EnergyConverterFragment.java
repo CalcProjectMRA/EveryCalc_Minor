@@ -115,34 +115,34 @@ JOULE CONVERSION
             if (sp1.getSelectedItem().toString() == "Joule" && sp2.getSelectedItem().toString() == "Kilo Joule") {
                 tot = amt/1000;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + String.format("%.8f",tot));
+                answer.setText("" + String.format("%.4f kJ",tot));
             }
             //2.Joule to Gram Calorie
             else if (sp1.getSelectedItem().toString() == "Joule" && sp2.getSelectedItem().toString() == "Gram Calorie") {
                 tot = amt/4.184;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + String.format("%.8f",tot));
+                answer.setText("" + String.format("%.4f cal",tot));
 
             }
             //3.Joule to Kilo Calorie
             else if (sp1.getSelectedItem().toString() == "Joule" && sp2.getSelectedItem().toString() == "Kilo Calorie") {
                 tot = amt/4184;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + String.format("%.8f",tot));
+                answer.setText("" + String.format("%.4f kcal",tot));
 
             }
             //4.Joule to Watt Hour
             else if (sp1.getSelectedItem().toString() == "Joule" && sp2.getSelectedItem().toString() == "Watt Hour") {
                 tot = amt/3600;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" +String.format("%.8f",tot));
+                answer.setText("" +String.format("%.4f Wh",tot));
 
             }
             //5.Joule to Kilowatt Hour
             else if (sp1.getSelectedItem().toString() == "Joule" && sp2.getSelectedItem().toString() == "Kilowatt Hour") {
                 tot = amt/3.6e+6;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + String.format("%.8f",tot));
+                answer.setText("" + String.format("%.4f kWh",tot));
 
             }
             /*
@@ -152,34 +152,34 @@ KILO JOULE CONVERSION
             else if (sp1.getSelectedItem().toString() == "Kilo Joule" && sp2.getSelectedItem().toString() == "Joule") {
                 tot = amt*1000;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + String.format("%.8f",tot));
+                answer.setText("" + String.format("%.4f J",tot));
             }
             //2.Kilo Joule to Gram Calorie
             else if (sp1.getSelectedItem().toString() == "Kilo Joule" && sp2.getSelectedItem().toString() == "Gram Calorie") {
                 tot = amt*239.006;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + String.format("%.8f",tot));
+                answer.setText("" + String.format("%.4f cal",tot));
 
             }
             //3.Kilo Joule to Kilo Calorie
             else if (sp1.getSelectedItem().toString() == "Kilo Joule" && sp2.getSelectedItem().toString() == "Kilo Calorie") {
                 tot = amt/4.184;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + String.format("%.8f",tot));
+                answer.setText("" + String.format("%.4f kcal",tot));
 
             }
             //4.Kilo Joule to Watt Hour
             else if (sp1.getSelectedItem().toString() == "Kilo Joule" && sp2.getSelectedItem().toString() == "Watt Hour") {
                 tot = amt/3.6;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" +String.format("%.8f",tot));
+                answer.setText("" +String.format("%.4f Wh",tot));
 
             }
             //5.Kilo Joule to Kilowatt Hour
             else if (sp1.getSelectedItem().toString() == "Kilo Joule" && sp2.getSelectedItem().toString() == "Kilowatt Hour") {
                 tot = amt/3600;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + String.format("%.8f",tot));
+                answer.setText("" + String.format("%.4f kWh",tot));
 
             }
             /*
@@ -189,34 +189,34 @@ GRAM CALORIE CONVERSION
             else if (sp1.getSelectedItem().toString() == "Gram Calorie" && sp2.getSelectedItem().toString() == "Kilo Joule") {
                 tot = amt/239;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + String.format("%.8f",tot));
+                answer.setText("" + String.format("%.4f kJ",tot));
             }
             //2.Gram Calorie to Joule
             else if (sp1.getSelectedItem().toString() == "Gram Calorie" && sp2.getSelectedItem().toString() == "Joule") {
                 tot = amt*4.184;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + String.format("%.8f",tot));
+                answer.setText("" + String.format("%.4f J",tot));
 
             }
             //3.Gram Calorie to Kilo Calorie
             else if (sp1.getSelectedItem().toString() == "Gram Calorie" && sp2.getSelectedItem().toString() == "Kilo Calorie") {
                 tot = amt/1000;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + String.format("%.8f",tot));
+                answer.setText("" + String.format("%.4f kcal",tot));
 
             }
             //4.Gram Calorie to Watt Hour
             else if (sp1.getSelectedItem().toString() == "Gram Calorie" && sp2.getSelectedItem().toString() == "Watt Hour") {
                 tot = amt/860;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" +String.format("%.8f",tot));
+                answer.setText("" +String.format("%.4f Wh",tot));
 
             }
             //5.Gram Calorie to Kilowatt Hour
             else if (sp1.getSelectedItem().toString() == "Gram Calorie" && sp2.getSelectedItem().toString() == "Kilowatt Hour") {
                 tot = amt/860421;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + String.format("%.8f",tot));
+                answer.setText("" + String.format("%.4f kWh",tot));
 
             }
             /*
@@ -226,34 +226,34 @@ KILO CALORIE CONVERSION
             else if (sp1.getSelectedItem().toString() == "Kilo Calorie" && sp2.getSelectedItem().toString() == "Kilo Joule") {
                 tot = amt*4.184;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + String.format("%.8f",tot));
+                answer.setText("" + String.format("%.4f kJ",tot));
             }
             //2.Kilo Calorie to Gram Calorie
             else if (sp1.getSelectedItem().toString() == "Kilo Calorie" && sp2.getSelectedItem().toString() == "Gram Calorie") {
                 tot = amt*1000;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + String.format("%.8f",tot));
+                answer.setText("" + String.format("%.4f cal",tot));
 
             }
             //3.Kilo Calorie to Joule
             else if (sp1.getSelectedItem().toString() == "Kilo Calorie" && sp2.getSelectedItem().toString() == "Joule") {
                 tot = amt*4184;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + String.format("%.8f",tot));
+                answer.setText("" + String.format("%.4f kcal",tot));
 
             }
             //4.Kilo Calorie to Watt Hour
             else if (sp1.getSelectedItem().toString() == "Kilo Calorie" && sp2.getSelectedItem().toString() == "Watt Hour") {
                 tot = amt*1.6222;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" +String.format("%.8f",tot));
+                answer.setText("" +String.format("%.4f Wh",tot));
 
             }
             //5.Kilo Calorie to Kilowatt Hour
             else if (sp1.getSelectedItem().toString() == "Kilo Calorie" && sp2.getSelectedItem().toString() == "Kilowatt Hour") {
                 tot = amt*0.00116222;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + String.format("%.8f",tot));
+                answer.setText("" + String.format("%.4f kWh",tot));
 
             }
             /*
@@ -263,34 +263,34 @@ WATT HOUR CONVERSION
             else if (sp1.getSelectedItem().toString() == "Watt Hour" && sp2.getSelectedItem().toString() == "Kilo Joule") {
                 tot = amt*3.6;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + String.format("%.8f",tot));
+                answer.setText("" + String.format("%.4f kJ",tot));
             }
             //2.Watt Hour to Gram Calorie
             else if (sp1.getSelectedItem().toString() == "Watt Hour" && sp2.getSelectedItem().toString() == "Gram Calorie") {
                 tot = amt*860.421;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + String.format("%.8f",tot));
+                answer.setText("" + String.format("%.4f cal",tot));
 
             }
             //3.Watt Hour to Kilo Calorie
             else if (sp1.getSelectedItem().toString() == "Watt Hour" && sp2.getSelectedItem().toString() == "Kilo Calorie") {
                 tot = amt*0.860421;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + String.format("%.8f",tot));
+                answer.setText("" + String.format("%.4f kcal",tot));
 
             }
             //4.Watt Hour to Joule
             else if (sp1.getSelectedItem().toString() == "Watt Hour" && sp2.getSelectedItem().toString() == "Joule") {
                 tot = amt*3600;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" +String.format("%.8f",tot));
+                answer.setText("" +String.format("%.4f J",tot));
 
             }
             //5.Watt Hour to Kilowatt Hour
             else if (sp1.getSelectedItem().toString() == "Watt Hour" && sp2.getSelectedItem().toString() == "Kilowatt Hour") {
                 tot = amt/1000;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + String.format("%.8f",tot));
+                answer.setText("" + String.format("%.4f kWh",tot));
 
             }
             /*
@@ -300,34 +300,34 @@ KILOWATT HOUR CONVERSION
             else if (sp1.getSelectedItem().toString() == "Kilowatt Hour" && sp2.getSelectedItem().toString() == "Kilo Joule") {
                 tot = amt*3600;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + String.format("%.8f",tot));
+                answer.setText("" + String.format("%.4f kJ",tot));
             }
             //2.Kilowatt Hour to Gram Calorie
             else if (sp1.getSelectedItem().toString() == "Kilowatt Hour" && sp2.getSelectedItem().toString() == "Gram Calorie") {
                 tot = amt*860421;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + String.format("%.8f",tot));
+                answer.setText("" + String.format("%.4f cal",tot));
 
             }
             //3.Kilowatt Hour to Kilo Calorie
             else if (sp1.getSelectedItem().toString() == "Kilowatt Hour" && sp2.getSelectedItem().toString() == "Kilo Calorie") {
                 tot = amt*860.421;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + String.format("%.8f",tot));
+                answer.setText("" + String.format("%.4f kcal",tot));
 
             }
             //4.Kilowatt Hour to Watt Hour
             else if (sp1.getSelectedItem().toString() == "Kilowatt Hour" && sp2.getSelectedItem().toString() == "Watt Hour") {
                 tot = amt*1000;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" +String.format("%.4f",tot));
+                answer.setText("" +String.format("%.4f Wh",tot));
 
             }
             //5.Kilowatt Hour to Joule
             else if (sp1.getSelectedItem().toString() == "Kilowatt Hour" && sp2.getSelectedItem().toString() == "Joule") {
                 tot = amt*3.6e+6;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + String.format("%.4f",tot));
+                answer.setText("" + String.format("%.4f J",tot));
 
             }
             else if (sp1.getSelectedItem().toString() ==  sp2.getSelectedItem().toString()) {

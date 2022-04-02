@@ -119,22 +119,22 @@ public class DataConverterFragment extends Fragment {
             if (sp1.getSelectedItem().toString() == "Byte" && sp2.getSelectedItem().toString() == "Kilobyte") {
                 tot = amt / 1024;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f KiB",tot));
             }
             else if (sp1.getSelectedItem().toString() == "Byte" && sp2.getSelectedItem().toString() == "Megabyte") {
                 tot = amt / 1048576;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f MiB",tot));
             }
             else if (sp1.getSelectedItem().toString() == "Byte" && sp2.getSelectedItem().toString() == "Gigabyte") {
                 tot = amt / 1.07374182e9;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f GiB",tot));
             }
             else if (sp1.getSelectedItem().toString() == "Byte" && sp2.getSelectedItem().toString() == "Terabyte") {
                 tot = amt / 1.09951163e12;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f TiB",tot));
             }
 
 
@@ -145,22 +145,22 @@ public class DataConverterFragment extends Fragment {
             else if (sp1.getSelectedItem().toString() == "Kilobyte" && sp2.getSelectedItem().toString() == "Megabyte") {
                 tot = amt / 1024;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f MiB",tot));
             }
             else if (sp1.getSelectedItem().toString() == "Kilobyte" && sp2.getSelectedItem().toString() == "Gigabyte") {
                 tot = amt / 1048576;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f GiB",tot));
             }
             else if (sp1.getSelectedItem().toString() == "Kilobyte" && sp2.getSelectedItem().toString() == "Terabyte") {
                 tot = amt / 1.07374182e9;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f TiB",tot));
             }
             else if (sp1.getSelectedItem().toString() == "Kilobyte" && sp2.getSelectedItem().toString() == "Byte") {
                 tot = amt * 1024 ;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f B",tot));
             }
  /*
 3.Megabyte CONVERSION
@@ -168,22 +168,22 @@ public class DataConverterFragment extends Fragment {
             else if (sp1.getSelectedItem().toString() == "Megabyte" && sp2.getSelectedItem().toString() == "Kilobyte") {
                 tot = amt * 1024;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f KiB",tot));
             }
             else if (sp1.getSelectedItem().toString() == "Megabyte" && sp2.getSelectedItem().toString() == "Gigabyte") {
                 tot = amt / 1024;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f GiB",tot));
             }
             else if (sp1.getSelectedItem().toString() == "Megabyte" && sp2.getSelectedItem().toString() == "Terabyte") {
                 tot = amt / 1048576;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f TiB",tot));
             }
             else if (sp1.getSelectedItem().toString() == "Megabyte" && sp2.getSelectedItem().toString() == "Byte") {
                 tot = amt * 1048576;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f B",tot));
             }
  /*
 4.Gigabyte CONVERSION
@@ -192,22 +192,22 @@ public class DataConverterFragment extends Fragment {
             else if (sp1.getSelectedItem().toString() == "Gigabyte" && sp2.getSelectedItem().toString() == "Kilobyte") {
                 tot = amt * 1048576;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f KiB",tot));
             }
             else if (sp1.getSelectedItem().toString() == "Gigabyte" && sp2.getSelectedItem().toString() == "Megabyte") {
                 tot = amt * 1024;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f MiB",tot));
             }
             else if (sp1.getSelectedItem().toString() == "Gigabyte" && sp2.getSelectedItem().toString() == "Terabyte") {
                 tot = amt / 1024;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f TiB",tot));
             }
             else if (sp1.getSelectedItem().toString() == "Gigabyte" && sp2.getSelectedItem().toString() == "Byte") {
                 tot = amt * 1073741824;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f B",tot));
             }
  /*
 4.Terabyte CONVERSION
@@ -215,26 +215,31 @@ public class DataConverterFragment extends Fragment {
             else if (sp1.getSelectedItem().toString() == "Terabyte" && sp2.getSelectedItem().toString() == "Byte") {
                 tot = amt * 1.09951163e12;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f B",tot));
             }
             else if (sp1.getSelectedItem().toString() == "Terabyte" && sp2.getSelectedItem().toString() == "Kilobyte") {
                 tot = amt * 1073741824;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f KiB",tot));
             }
             else if (sp1.getSelectedItem().toString() == "Terabyte" && sp2.getSelectedItem().toString() == "Megabyte") {
                 tot = amt * 1048576;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f MiB",tot));
             }
             else if (sp1.getSelectedItem().toString() == "Terabyte" && sp2.getSelectedItem().toString() == "Gigabyte") {
                 tot = amt * 1024;
                 //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
-                answer.setText("" + tot);
+                answer.setText("" + String.format("%.4f GiB",tot));
             }
+            else if (sp1.getSelectedItem().toString() == sp2.getSelectedItem().toString()) {
+                tot = amt;
+                //if both spinner are same (Note):-
+                //Toast.makeText(getApplicationContext(), tot.toString(), Toast.LENGTH_LONG).show();
+                answer.setText("" + tot);
 
-            else {
-                amt = 0.0;
+            } else {
+                //amt = 0.0;
                 answer.setText("0");
             }
 
