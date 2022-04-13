@@ -235,7 +235,11 @@
         android:id="@+id/physicsMenuFragment"
         android:name="com.example.everycalc.PhysicsMenuFragment"
         android:label="fragment_physics_menu"
-        tools:layout="@layout/fragment_physics_menu" />
+        tools:layout="@layout/fragment_physics_menu" >
+        <action
+            android:id="@+id/action_physicsMenuFragment_to_accelerationFragment"
+            app:destination="@id/accelerationFragment" />
+    </fragment>
     <fragment
         android:id="@+id/economicsMenuFragment"
         android:name="com.example.everycalc.EconomicsMenuFragment"
@@ -270,5 +274,10 @@
         android:name="com.example.everycalc.SimpleInterestFragment"
         android:label="fragment_simple_interest"
         tools:layout="@layout/fragment_simple_interest" />
+    <fragment
+        android:id="@+id/accelerationFragment"
+        android:name="com.example.everycalc.AccelerationFragment"
+        android:label="fragment_acceleration"
+        tools:layout="@layout/fragment_acceleration" />
 
 </navigation>
