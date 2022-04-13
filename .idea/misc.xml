@@ -3,10 +3,6 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/KIIT/AndroidStudioProjects/EveryCalc_Minor/app/src/main/res/drawable/card1.xml" value="0.25555555555555554" />
-        <entry key="..\:/Users/KIIT/AndroidStudioProjects/EveryCalc_Minor/app/src/main/res/drawable/header_background.xml" value="0.1" />
-        <entry key="..\:/Users/KIIT/AndroidStudioProjects/EveryCalc_Minor/app/src/main/res/drawable/ic_baseline_search_24.xml" value="0.1" />
-        <entry key="..\:/Users/KIIT/AndroidStudioProjects/EveryCalc_Minor/app/src/main/res/drawable/white_rectangle_background.xml" value="0.1" />
         <entry key="..\:/EverCalcMinor/EveryCalc_Minor/app/src/main/res/layout/activity_main.xml" value="0.22" />
         <entry key="..\:/EverCalcMinor/EveryCalc_Minor/app/src/main/res/layout/adv_keyboard.xml" value="0.2" />
         <entry key="..\:/EverCalcMinor/EveryCalc_Minor/app/src/main/res/layout/fragment_adv_key.xml" value="0.2" />
@@ -16,6 +12,7 @@
         <entry key="..\:/EverCalcMinor/EveryCalc_Minor/app/src/main/res/layout/fragment_mensuration3_d.xml" value="0.16666666666666666" />
         <entry key="..\:/EverCalcMinor/EveryCalc_Minor/app/src/main/res/layout/fragment_more.xml" value="0.33214285714285713" />
         <entry key="..\:/EveryCalc/EveryCalc_Minor/app/src/main/res/layout/adv_keyboard.xml" value="0.17552083333333332" />
+        <entry key="..\:/EveryCalc/EveryCalc_Minor/app/src/main/res/layout/fragment_acceleration.xml" value="0.17552083333333332" />
         <entry key="..\:/EveryCalc/EveryCalc_Minor/app/src/main/res/layout/fragment_adv_key.xml" value="0.17552083333333332" />
         <entry key="..\:/EveryCalc/EveryCalc_Minor/app/src/main/res/layout/fragment_area_converter.xml" value="0.17552083333333332" />
         <entry key="..\:/EveryCalc/EveryCalc_Minor/app/src/main/res/layout/fragment_converter_menu.xml" value="0.16666666666666666" />
@@ -24,24 +21,12 @@
         <entry key="..\:/EveryCalc/EveryCalc_Minor/app/src/main/res/layout/fragment_mass_converter.xml" value="0.17552083333333332" />
         <entry key="..\:/EveryCalc/EveryCalc_Minor/app/src/main/res/layout/fragment_more.xml" value="0.16666666666666666" />
         <entry key="..\:/EveryCalc/EveryCalc_Minor/app/src/main/res/layout/fragment_physics_menu.xml" value="0.17552083333333332" />
+        <entry key="..\:/EveryCalc/EveryCalc_Minor/app/src/main/res/layout/fragment_profit_loss.xml" value="0.17552083333333332" />
         <entry key="..\:/EveryCalc/EveryCalc_Minor/app/src/main/res/layout/fragment_rhombus.xml" value="0.17552083333333332" />
+        <entry key="..\:/EveryCalc/EveryCalc_Minor/app/src/main/res/layout/fragment_simple_interest.xml" value="0.17552083333333332" />
         <entry key="..\:/EveryCalc/EveryCalc_Minor/app/src/main/res/layout/fragment_volume_converter.xml" value="0.17552083333333332" />
         <entry key="..\:/Users/KIIT/AndroidStudioProjects/EveryCalc_Minor/app/src/main/res/layout/activity_main.xml" value="0.17552083333333332" />
         <entry key="..\:/Users/KIIT/AndroidStudioProjects/EveryCalc_Minor/app/src/main/res/layout/fragment_calc.xml" value="0.17552083333333332" />
-<<<<<<< HEAD
-<<<<<<< HEAD
-        <entry key="..\:/Users/KIIT/AndroidStudioProjects/EveryCalc_Minor/app/src/main/res/layout/fragment_fav.xml" value="0.25" />
-        <entry key="..\:/Users/KIIT/AndroidStudioProjects/EveryCalc_Minor/app/src/main/res/layout/fragment_more.xml" value="0.264" />
-        <entry key="..\:/Users/KIIT/AndroidStudioProjects/EveryCalc_Minor/app/src/main/res/layout/grid_item.xml" value="0.24635416666666668" />
-        <entry key="..\:/Users/KIIT/AndroidStudioProjects/EveryCalc_Minor/app/src/main/res/menu/bottom_nav.xml" value="0.144" />
-||||||| be7ac39
-=======
-        <entry key="..\:/Users/KIIT/AndroidStudioProjects/EveryCalc_Minor/app/src/main/res/layout/fragment_circle.xml" value="0.17552083333333332" />
->>>>>>> 7270929aa765d928ce2b5ae53c90130858256ffe
-||||||| 7270929
-        <entry key="..\:/Users/KIIT/AndroidStudioProjects/EveryCalc_Minor/app/src/main/res/layout/fragment_circle.xml" value="0.17552083333333332" />
-=======
->>>>>>> 4e62a7cabe87fe6d46c11baecfa878ccd617da6e
         <entry key="..\:/Users/KIIT/AndroidStudioProjects/EveryCalc_Minor/app/src/main/res/layout/fragment_cone.xml" value="0.17552083333333332" />
         <entry key="..\:/Users/KIIT/AndroidStudioProjects/EveryCalc_Minor/app/src/main/res/layout/fragment_cube.xml" value="0.17552083333333332" />
         <entry key="..\:/Users/KIIT/AndroidStudioProjects/EveryCalc_Minor/app/src/main/res/layout/fragment_cuboid.xml" value="0.17552083333333332" />
