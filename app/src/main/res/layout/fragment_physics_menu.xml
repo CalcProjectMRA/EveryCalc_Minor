@@ -75,7 +75,7 @@
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/P2"
+                    android:id="@+id/KineticEnergyMenu"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_row="0"
@@ -107,7 +107,7 @@
                             android:id="@+id/Pt2"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Density"
+                            android:text="Kinetic Energy"
                             android:layout_margin="5px"
                             android:textAlignment="center"
                             android:textSize="20sp"
