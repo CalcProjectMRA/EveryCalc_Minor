@@ -239,6 +239,9 @@
         <action
             android:id="@+id/action_physicsMenuFragment_to_accelerationFragment"
             app:destination="@id/accelerationFragment" />
+        <action
+            android:id="@+id/action_physicsMenuFragment_to_kineticEnergyFragment"
+            app:destination="@id/kineticEnergyFragment" />
     </fragment>
     <fragment
         android:id="@+id/economicsMenuFragment"
@@ -279,5 +282,10 @@
         android:name="com.example.everycalc.AccelerationFragment"
         android:label="fragment_acceleration"
         tools:layout="@layout/fragment_acceleration" />
+    <fragment
+        android:id="@+id/kineticEnergyFragment"
+        android:name="com.example.everycalc.KineticEnergyFragment"
+        android:label="fragment_kinetic_energy"
+        tools:layout="@layout/fragment_kinetic_energy" />
 
 </navigation>

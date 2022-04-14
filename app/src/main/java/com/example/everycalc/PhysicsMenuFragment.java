@@ -12,7 +12,7 @@ import android.view.ViewGroup;
 
 public class PhysicsMenuFragment extends Fragment {
 
-    CardView acceleration;
+    CardView acceleration, kineticEnergy;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -20,10 +20,17 @@ public class PhysicsMenuFragment extends Fragment {
         View view=inflater.inflate(R.layout.fragment_physics_menu, container, false);
 
         acceleration = view.findViewById(R.id.Acceleration);
+        kineticEnergy = view.findViewById(R.id.KineticEnergyMenu);
         acceleration.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Navigation.findNavController(view).navigate(R.id.action_physicsMenuFragment_to_accelerationFragment);
+            }
+        });
+        kineticEnergy.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Navigation.findNavController(view).navigate(R.id.action_physicsMenuFragment_to_kineticEnergyFragment);
             }
         });
         return view;
